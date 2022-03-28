@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index2.css">
+    <script>
+        const rate = localStorage.getItem("rate")//The value stored in the chrome browser is called here
+    </script>
+</head>
+<body>
+    <section class="container">
+        <div class="container-wrapper">
+            <img src="../images/illustration-thank-you.svg" alt="Thank you" class="img">
+            <p class="selection"></p>
+            <div class="container-text">
+                <h3 class="heading">Thank you!</h3>
+                <p class="text">We appericiate you taking the time to give a rating. if you ever need more support, don't hesitate to get in touch!</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        const selectedRate = document.querySelector('.selection').innerText = `You selected ${rate} out of 5`; //this code injects the our page (<p class = "selection"></p>).
+    </script>
+
+</body>
+
+</html>

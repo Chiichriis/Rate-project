@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Overpass;
+    src: url(https://fonts.google.com/specimen/Overpass);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Dark_Blue: hsl(213, 19%, 18%);
+    --black: hsl(216, 12%, 8%);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    height: 100vh;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+.container-wrapper{
+    background-color: var(--Dark_Blue);
+    margin: 0 1.5rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.container-star{
+    height: 2.4rem;
+    border-radius: 50%;
+    box-shadow: 0 .1rem 1rem var(--black);
+    padding: .8rem;
+    border: none;
+}
+
+.container-text{
+    font-family: Overpass, sans-serif;
+    margin: 1rem 0;
+}
+
+.heading{
+    color: var(--White);
+    font-weight: 400;
+}
+
+.text{
+    color: var(--Light_Grey);
+    font-size: .7rem;
+    line-height: 1rem;
+    margin: .5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ratings{
+    display: flex;
+    justify-content: space-between;
+    font-family: Overpass, sans-serif;
+}
+
+.rate{
+    margin: 1rem 0;
+    padding: .8rem 1rem;
+    border-radius: 50%;
+    background-color: inherit;
+    font-size: .7rem;
+    color: var(--Light_Grey);
+    box-shadow: 0 .1rem 1rem var(--black);
+    cursor: pointer;
+}
+.rate:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+    transition: ease-in-out .5s;
+}
+.active{
+   color: var(--White);
+   background-color: var(--Medium_Grey);
+}
+
+
+.btn{
+    width: 100%;
+    background-color: var(--Orange);
+    border: none;
+    height: 2.2rem;
+    border-radius: 5rem;
+    color: var(--White);
+    margin: .3rem 0;
+    font-family: Overpass, sans-serif;
+    font-size: .7rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    transition: ease-in-out .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*for desktop using a min-width of 600px */
+@media (min-width: 600px) {
+    .container{
+        justify-content: center;
+    }
+    .container-wrapper{
+        width: 20rem;
+    }
+}
